@@ -83,36 +83,6 @@
     * **Organização semântica:** Informa aos navegadores e mecanismos de busca onde fica o conteúdo conclusivo.
 
 
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-<section></section> 
-    usada para definir uma seção genérica e temática de conteúdo em um documento, geralmente acompanhada de um título
-
-<aside></aside>
-    server para definiir uma seção de página cujo conteúdo está apenas indiretamente ou tangencialmente relacionado ao conteúdo principal ao seu redor 
-    Usada para conteúdo complementar, ou seja, informações que agregam contexto, como biografias de autores, definições de glossário, caixas de destaque ou listas
-    de link relacionados.
-    É muito utilizada estruturalemnte para cirar as tradicionais sidebars em blos e portais
-
-<footer></footer>
-    cria um rodapé, sendo a última tag declarada
-      
-        
       
         
             
