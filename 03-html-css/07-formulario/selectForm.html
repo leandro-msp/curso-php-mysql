@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulários 2 - Select</title>
+</head>
+<body>
+    <!-- trabalhando com select, option e required -->
+    <form action="">
+
+        <!--fieldset = cria uma borda automatica no form
+            legend = propriamente dito, adiciona uma descrição/legenda ao form, agregando a borda criada
+         -->
+        <fieldset>
+            <legend>Seleção de Dados</legend>
+            <input type="text" name="nome" placeholder="Digite seu nome" required><br><br>
+            
+            <!-- a tag select cria uma lista suspensa para o usuário escolher uma opção entre as disponíveis que foram definidas
+                option = define cada item que aparece dentro da lista, e o atributo VALUE indica o dado que será enviado ao servidor qnd
+                o form for escolhido
+
+                atributos:
+                required = torna obrigatório selecionar uma opção ou preencher o campo antes de enviar o form
+                multiple = permite selecionar mais de um item ao mesmo tempo
+                size = define quantas opção aparecem visíveis ao mesmo tempo
+            -->
+            <label for="estado-civil">Estado civil:</label><br>
+            <select name="estadoCivil" id="estado-civil" required><br>
+                <option value="" disabled selected >Escolha uma opção...</option> <!-- pelo fato dessa opção nn possuir VALUE, ela nn é lida como um dado de envio, ou seja nn é enviada ao servidor-->
+                <option value="casado">Casado</option>
+                <option value="solteiro">Solteiro</option>
+                <option value="divorciado">Divorciado</option>
+                <option value="viuvo">Viúvo</option>
+            </select><br><br>
+            <!-- atributos do option:
+            selectd = define qual das opções disponíveis vai ser fixada, ou seja, a opção da lista que aparece quando usuário abre a página
+            disabled = desativa aquela opção específica, impedidndo que o usuário clique nela, exemplos para opções de instrução(ex: "Selecione uma opção...")
+             -->
+
+
+            <!-- também é possível criar um agrupamento de opções quando vai se trabalhar com uma lista muito grande -->
+            <label for="carros">Escolha um modelo de Carro</label>
+            <select name="carro" id="carros" required>
+                <optgroup label="Suvs">
+                    <option value="hrv"> HRV</option>
+                    <option value="creta">Creta</option>
+                </optgroup>
+                <optgroup label="Sedans">
+                    <option value="Corolla">Corolla</option>
+                    <option value="Civic">Civic</option>
+                </optgroup>
+            </select><br>
+
+        </fieldset>
+
+    </form>
+    
+</body>
+</html>
