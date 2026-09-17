@@ -1,0 +1,8 @@
+Formulários são um elemento que sempre vai existir em uma aplicação. Um formulário são vários campos onde preenchemos com diversos dados, podendo ser qualquer tipo de dado,
+conforme a regra de negócios e a necessidade de sistema.
+    
+    Os forms mais comuns são os de cadastro, onde o usuário preenche uma série de dados solicitados para que possa ser registrado no sistema, ou por exemplo quando cria-se
+um perfil novo em uma rede social, e o forms de login, onde o usuário ja devidamente cadastro insere informações que serão autenticadas e liberar acesso ao sistema.
+
+    Além de se utilizar campos para inserir dados, furmulário elementos como checkbox e radio(caixas pra selecionar uma opção dentre várias, sendo que o radio permite a esolha
+    de apenas uma opção)
