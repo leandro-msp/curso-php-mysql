@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Aula 7 - Formulário (input type)</title>
+</head>
+<body>
+    <!-- atributos que não podem faltar na tag <form>
+    action =  pega os dados inseridos durante o preenchimento e os envia para uma página definida
+    method = forma de envio dos dados
+    -->
+
+    <h1>Cadastro de Cliente</h1>
+    <form action="" method="">
+
+        <!-- input do tipo texto -->
+        
+        
+        <!-- 
+        label = cria um texto descritivo associado ao campo por acessebilidade(usando o atributo *for* que deve ser igual ao id do campo), isto é
+        o texto explicativo é conectado ao campo para que tecnologias assistivas( como leitores de tela para pessoas com deficiência visual) saibam
+        exatamente o que aquele campo pede
+        -->
+
+        <label for="nome-cliente">Nome Cliente</label>
+        <input type="text" id="nome-cliente" name="nome" placeholder="Digite seu nome ... "><br>
+        <!-- 
+        type = o tipo de dado | 
+        name = o nome do campo(para qnd for enviada para linguagem de programação, ser identiicado)
+        placeholder = a descrição que vai aparecer dentro da caixa de digitação
+         -->
+        
+        <!-- input do tipo número -->
+        <label for="idade">Idade</label>
+        <input type="number" id="idade" name="idade" min="0" max="1000" step="1" placeholder="Digite sua idade ..."><br>
+
+        <!-- 
+        min = define o número mínimo permitido
+        max = definie o número máximo permitido
+        step =  intervalo de número caso utilize o cursor para alterar o valor o valor
+        -->
+
+        <!-- input do tipo data -->
+        <label for="datanascimento">Data de nascimento</label>
+        <input type="date" id="datanascimento" name="datanascimento"  placeholder="Digite sua data de nascimento... "><br>
+
+        <!-- input do tipo senha -->
+        <label for="senha">Senha</label>
+        <input type="password" id="senha" name="senha"  placeholder="Digite uma senha forte... "><br>
+
+        <!-- input do tipo checkbox -->
+        <label for="">Opções:</label><br>
+        <input type="checkbox" name="opcao1">Opção 1<br>
+        <input type="checkbox" name="opcao2">Opção 2<br>
+        <input type="checkbox" name="opcao1">Opção 3<br>
+
+        <!-- no checkbox é possível selecionar mais de uma opção, diferente do radio -->
+
+        <!-- input do tipo radio -->
+        <label for="">Tamanho</label><br>
+        <input type="radio" name="tamanhop">P<br>
+        <input type="radio" name="tamanhom">M<br>
+        <input type="radio" name="tamanhog">G<br>
+        <input type="radio" name="tamanhogg">GG<br>
+        <input type="radio" name="tamanhoeg">EG<br>
+
+         <!-- input do tipo submit ou button-->
+          <input type="submit" name="enviarDados" value="Enviar dados"><br>
+          <input type="button" name="enviarDados" value="Enviar dados"><br>
+
+
+
+    </form> 
+
+</body>
+
+  
+</html>
