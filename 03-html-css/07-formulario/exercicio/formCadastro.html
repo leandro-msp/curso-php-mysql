@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Cadastro Funcionário</title>
+</head>
+
+<body style="width: 100%;">
+    <!-- Exercício para fixação de conceitos aprendidos -->
+    <h1>Cadastro de Funcionário</h1>
+    <form action="">
+        <fieldset>
+            <legend>Dados Pessoais</legend>
+            <label for="nome-cliente">Nome</label><br>
+            <input type="text" id="sobrenome-cliente" name="nome" placeholder="Digite seu nome..." required><br>
+
+
+            <label for="sobrenome-cliente">Sobrenome</label><br>
+            <input type="text" id="sobrenome-cliente" name="sobrenome" placeholder="Digite seu sobrenome..."
+                required><br><br>
+
+            <label for="idade">Idade</label><br>
+            <input type="number" min="1" name="idade" id="idade" placeholder="Digite sua idade..." required><br><br>
+
+            <label for="estado-civil">Estado Civil</label><br>
+            <select name="estado-civil" id="estado-civil">
+                <option value="nulo" disabled selected>Escolha uma opção...</option>
+                <option value="solteiro">Solteiro</option>
+                <option value="casado">Casado</option>
+                <option value="divorciado">Divorciado</option>
+                <option value="viuvo">Víuvo</option>
+            </select><br><br>
+
+            <h3>Contato</h3>
+            <label for="celular">Celular</label>
+            <input type="tel" name="celular" id="celular" required placeholder="Digite o número de celular...">
+            <label for="telefone">Telefone</label>
+            <input type="tel" name="telefone" id="telefone" placeholder="Digite seu telefone residencial..."><br><br>
+            <label for="email">e-mail:</label>
+            <input type="email" name="email" id="email" placeholder="Digite seu e-mail..." required>
+
+            <h3>Endereço</h3>
+            <label for="ddd">Estado</label>
+            <select name="ddd" id="contato" required><br>
+
+                <option value="ac">AC</option>
+                <option value="al">AL</option>
+                <option value="ap">AP</option>
+                <option value="am">AM</option>
+                <option value="ba">BA</option>
+                <option value="ce">CE</option>
+                <option value="df">DF</option>
+                <option value="es">ES</option>
+                <option value="go">GO</option>
+                <option value="ma">MA</option>
+                <option value="mt">MT</option>
+                <option value="ms">MS</option>
+                <option value="mg">MG</option>
+                <option value="pa">PA</option>
+                <option value="pb">PB</option>
+                <option value="pr">PR</option>
+                <option value="pe">PE</option>
+                <option value="pi">PI</option>
+                <option value="rj">RJ</option>
+                <option value="rn">RN</option>
+                <option value="rs">RS</option>
+                <option value="ro">RO</option>
+                <option value="rr">RR</option>
+                <option value="sc">SC</option>
+                <option value="sp">SP</option>
+                <option value="se">SE</option>
+                <option value="to">TO</option>
+
+            </select>
+            <label for="municipio">Município</label>
+            <input type="text" name="municipio" id="municipio" placeholder="Digite o nome do município..."><br><br>
+
+            <label for="rua">Nome da Rua</label><br>
+            <input type="text" name="" id="rua" placeholder="Digite o nome da rua ...">
+
+            <label for="numero"></label>
+            Nº da casa <input type="text" name="numero" placeholder="Nº da casa ">
+
+            <label for="tipo-casa">Tipo Residência</label>
+            <select name="tipo" id="tipo-casa" required>
+                <option value="escolha" disabled selected>Escolha uma opção...</option>
+                <option value="casa">Casa</option>
+                <option value="apartamento">Apartamento</option>
+                <option value="condomínio">Condomínio</option>
+            </select>
+            <label for="bloco">Bloco</label>
+            <input type="text" placeholder="Digite o bloco(opcional)">
+            
+            
+            <br><br>
+
+            <label for="cep">CEP</label>
+            <input type="tel" placeholder="Digite o CEP..." required>
+
+            <label for="complemento">Complemento</label>
+            <input type="text" placeholder="Complemento...(opcional)">
+
+            <h3>Uniforme</h3>
+
+            <label for="camisa">Tamanho da Camisa</label><br>
+            <input type="radio" name="tamanho_camisa">P
+            <input type="radio" name="tamanho_camisa">M
+            <input type="radio" name="tamanho_camisa">G
+            <input type="radio" name="tamanho_camisa">GG
+            <br><br>
+
+            <label for="calça">Tamanho da Calça</label><br>
+            <input type="radio" name="tamanho_calca">P
+            <input type="radio" name="tamanho_calca">M
+            <input type="radio" name="tamanho_calca">G
+            <input type="radio" name="tamanho_calca">GG
+            <br><br>
+
+            <label for="calçado">Número do Calçado</label><br>
+            <select name="tamanhocalçado" id="calçado" required>
+                <option value="nf" disabled selected>Tamanho...</option>
+                <option value="33">33</option>
+                <option value="34">34</option>
+                <option value="35">35</option>
+                <option value="36">36</option>
+                <option value="37">37</option>
+                <option value="38">38</option>
+                <option value="39">39</option>
+                <option value="40">40</option>
+                <option value="41">41</option>
+                <option value="42">42</option>
+                <option value="43">43</option>
+                <option value="44">44</option>
+                <option value="45">45</option>
+            </select>
+
+        </fieldset>
+
+    </form>
+
+</body>
+
+</html>
