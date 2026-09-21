@@ -1,0 +1,65 @@
+/* ESTILIZANDO ELEMENTOS DE TEXTO */
+
+h1{
+    font-family: 'Lucida Sans', Arial, sans-serif;
+    color: brown; /* mudar cor do texto*/
+    text-transform:capitalize;
+    font-weight: bold ; /*peso da fonte(espessura da fonte)*/
+    letter-spacing:2.5px; /*espaçamento entre letras | pode ser em pixels (px), em, rem, etc */
+    text-shadow: 1px 1px 2px rgba(0,0,0,0.5 ); /*sombra do texto*/ 
+    text-align: center; /*alinhamento do texto na tela*/
+}
+
+p{
+    font-family: 'Lucida Sans', sans-serif;
+    color: rgb(3, 56, 10);
+    text-transform: lowercase;
+    letter-spacing: 0.5px;
+    font-weight: bold;
+    font-size: 16px ; /*tamanho da fonte | 16 pixels é o tamanho padrão do parágrafo*/ 
+    line-height: 22px; /* distância(espaçao) entre as linhas dos textos*/
+    text-indent: 30px; /*recúo no início do parágrago*/
+    text-align: center;
+}
+
+blockquote{
+    font-family: 'Lucida Sans', sans-serif;
+    color: rgb(61, 65, 61);
+    text-transform: lowercase;
+    text-align: center;
+    font-style: italic; /* adiciona um estilo de fonte*/
+}
+
+
+/*UTILIZANDO FONTES EXTERNAS*/
+
+.ubuntu-mono-bold {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 700;
+  font-style: normal;
+}
+
+.ubuntu-mono-regular {
+  font-family: "Ubuntu Mono", monospace;
+  font-weight: 400;
+  font-style: normal;
+}
+
+
+/*
+
+font-family =  define o a família de fontes que vai representar aquele texto. Esta propriedade segue um conjunto de prioride:
+a sequência de nomes de fontes, serão as fontes que serão pesquisas pelo navegador, caso não tenha uma instalada no navegador do usuário
+ele vai para a próxima.
+
+
+text-transform = Altera o estado original do texto
+    exemplo - > uppercase - deixa todas as letras em caixa alta
+                lowercase - deixa todas as letras minúsculas
+                capitalize - deixa as primeiras letras do texto em caixa alta
+
+
+text-shadow: adiciona sombra ao texto, tendo ele a possibilidade de 4 parametros:
+            deslocamnto horizontal deslocamento vertical, raio de desfoque , e a cor
+            a cor rgba possui também 4 parâmtros, níveis das cores red, green e blue, e a opcidade
+*/
