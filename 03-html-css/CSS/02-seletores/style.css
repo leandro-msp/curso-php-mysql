@@ -1,0 +1,28 @@
+/* SELEÇÃO POR ELEMENTO*/
+
+div{
+    background-color: aquamarine;
+    
+    /*Quando se faz uma seleção por elemento, todos os elementos daquele tipo serão afetados, por exemplo:
+    se temos um elemento(tag div) e aplicarmos um background, todas as tags div terão mesmo fundo. Sendo assim, é um uso que requer cuidado.*/
+}
+
+/* SELEÇÃO POR ID -> para declarar um id usa-se o hashtag*/
+
+#primeiro { 
+    background-color: blanchedalmond;
+    
+    /*Neste método é definido um id para um elemento, e somente ele será afetado pelas propriedades definidades,
+        obs.: o ID é exclusivo, não é possível utilizar mesmo id em vários elementos.*/
+}
+
+/* SELEÇÃO POR CLASSE -> para  declarar uma classe usa-se um ponto (.) */
+
+.teste{
+    background-color: chartreuse;
+
+    /* Neste método uma classe é gerada, e todos as propriedades/atributos que forem definidos nela, poderão ser aplicados
+    em qualquer elemento que chame essa classe. Ou seja, diferente do ID, uma classe pode ser aplicada em quantos elementos desejarmos*/
+}
+
+
