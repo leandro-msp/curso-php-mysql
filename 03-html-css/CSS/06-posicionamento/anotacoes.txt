@@ -1,0 +1,39 @@
+Propriedade POSITION
+
+POSITION-FIXED:
+
+    Uso:
+    serve para fixar um elemento diretamente na tela do navegador, fazendo com que ele não saia do lugar mesmo quando o usuário rola a página para cima ou para baixo.
+    o control das coordenadas é feito com a props: top, bottom, left e right.
+
+    Referência:
+    o elemento se posiciona com base na viewport (a janela visível do navegador), e não no restante do documento ou em outros elementos.
+
+    Saída de Fluxo:
+    o elemento é retirado do fluxo normal da página. É como se ele flutuasse por cima do conteúdo, liberando o espaço que ocupava antes para os outros itens ao redor.
+
+
+POSITION-RELATIVE:  
+
+    Muda o comportamento de um elemento sem tirá-lo do fluxo normal da página, permitindo que ele seja movido ou sirva de ponto de partida para outros elementos.
+    Diferente do fixed, o elemento relative ainda ocupa o seu espaço físico original na página, e os outros elementos ao redor o respeitam como se ele não tivesse se movido.
+
+    Funções: 
+    Mover o elemento sem afetar o layout ao redor:
+    top,bottom,lef e right também sao as props para deslocar o elemento a partir da sua posição original.  Os elementos vizinhos não se movem para preencher o "vazio" deixado.
+
+    servir de âncora para elementos com position: absolute (O uso mais comum)
+
+    Por padrão, um elemento com position: absolute se posiciona em relação à tela inteira. Porém, se utilizar position: relative em um elemento pai, 
+    qualquer elemento filho com position: absolute vai se posicionar dentro dos limites desse pai.
+
+
+POSITION-ABSOLUTE:
+
+    remove completamente o elemento do fluxo normal da página, permitindo que você o posicione cirurgicamente em qualquer lugar usando top, bottom, left e right.
+    Como ele é removido do fluxo, ele não ocupa espaço físico na página. Os outros elementos agem como se ele nem existisse e sobem ou se movem para ocupar o espaço que seria dele.
+
+    Referência:
+    Essa é a regra mais importante do absolute: ele se posiciona em relação ao elemento ancestral mais próximo que tenha qualquer position diferente de static
+    Se houver um pai com position: relative: O elemento absolute vai usar as bordas desse elemento pai como ponto de partida (0,0).
+    Se não houver nenhum pai configurado: Ele vai subindo na estrutura do código até o topo e usará a própria janela do navegador (viewport ou a tag <body>) como referência.

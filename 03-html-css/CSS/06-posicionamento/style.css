@@ -1,0 +1,57 @@
+*{ margin: 0; padding: 0;  box-sizing: border-box;}
+.container{ width: 96%; padding: 10px; margin: 0 auto; font-weight: bold;}
+html{ font-family: Verdana, Geneva, Tahoma, sans-serif;} /*alterando fonte de todo o conteúdo do html*/
+
+.divisao{
+    padding-bottom: 100px;
+}
+/* Posição Fixa */
+.fixo{
+    width: 100%;
+    height: 10vh ;
+    background-color: #8bc6ee ;
+    text-align: center;
+    border-bottom: 2px solid #0e3057;
+    position: fixed; /*vai fixar o elemento na posição que ele for configurado, caso nn haja trativas com top, bottom left e right, será considerada a posição de criação*/
+}
+
+/* Posição Relativa */
+.relativo{
+    width: 100%;
+    height: 20vh ;
+    background-color: #ffda05 ;
+    text-align: center;
+    position: relative; /*ele é relativo a posição original do elemento*/
+    top: 30px; /*30px abaixo da sua posição original*/
+    left: 100px; /*100px à esquerda da sua posição original*/
+    
+}
+
+/* Posição Absoluta */
+.absoluto{
+    padding: 40px;
+    width: 100%;
+    height: 20vh ;
+    background-color: #e64acc ;
+    text-align: center;
+    position: absolute; /* um elemento com absolute definido, vai respeitar o limite/margens do seu elemento pai*/
+    bottom: 100px; /*afasta 100px da fundo do seu elemento pai(base)*/
+    left: 100px; /*afasta 100px da borda do seu elemento base neste casoo body*/
+
+}
+
+.absoluto .filho{
+    width: 60%;
+    height: 10vh ;
+    background-color: #0509ff ;
+    position:absolute; 
+    top: 10px; /*por mais que este elemento esta com absolute, ele respeita os limites/hierarquia do elemento pai,
+    ou seja ele nn vai para o topo da página, vai para o topo do elemento q ele está inserido*/
+}
+
+.full{
+    width: 100%;
+    height: 1000px;
+    background-color: rgb(70, 247, 84);
+    text-align: center;
+}
