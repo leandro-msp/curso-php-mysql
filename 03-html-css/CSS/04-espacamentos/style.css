@@ -1,0 +1,32 @@
+*{ /* reseta as configurações padrão do navegador*/
+    margin: 0; /*margem*/
+    padding: 0; /*espaçamento interno*/
+}
+
+div{
+    width: 200px; /*largura*/
+    height: 200px; /*altura*/
+    background-color: aqua;
+    margin: 10px;
+    padding-top: 100px ; /*espaçamento interno | vai dar um espaço de 100px no topo*/
+    padding-left: 70px;
+    box-sizing: border-box; /*evita q o bloco não aumente o tamanho quando o padding for utilizado*/
+    font-family: 'Lucida Sans', sans-serif;
+    font-style: italic;
+    text-decoration:underline;
+}
+
+/*  MARGIN
+    
+    margin: 10px; 1 valor => aplicar valor aos quatros lados (topo, direita, fuundo, esquerda)
+    margin: 10px 20px;  2 valores => aplica o primeiro valor para topo e fundo, e segundo para direita e esquerda 
+    margin: 10px 20px 30px; 3 valores => 1º topo, 2º direita e esquerda,3º fundo
+    margin: 10px 20px 30px 40px; 4 valore => ordem exata, topo,direita,fundo e esquerda
+
+
+    MARGIN *ESPECÍFICO*
+    margin-top -> ajusta espaçamento no topo
+    margin-left -> ajusta espaçamento à esquerda
+    margin-right -> ajusta espaçamento à direita
+    margin-bottom -> ajusta espaçamento no fundo
+*/
