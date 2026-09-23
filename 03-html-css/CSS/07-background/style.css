@@ -1,0 +1,38 @@
+*{ margin: 0; padding: 0; box-sizing: border-box;}
+.container{ width: 100%; margin: 0 auto;}
+html{font-family: Verdana, Geneva, Tahoma, sans-serif;}
+
+
+/*BACKGROUND COLOR E LINEAR GRADIENT*/
+.color{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    color: aliceblue; /*cor da fonte*/
+    background-color: rgb(255, 127, 80); /*cor de fundo*/
+    background: linear-gradient(to right,#dfaf68,#ee8f01);/*propriedade que trabalha com o background em si, podendo ser cores ou outras propriedades*/
+    /*liner gradient add um degradê linear , primeiro parâmetro a direção, e a sequencia de cores */
+    background: linear-gradient(to left,#dfaf68,#ee8f01);
+    background: linear-gradient(to bottom,#dfaf68,#ee8f01);
+    background: linear-gradient(to top,#dfaf68,#ee8f01); 
+    /*neste tipo de propriedade sempre será considerada a ultima instrução*/
+    margin-bottom: 20px;
+}
+
+.radial{
+    width: 100%;
+    height: 100px;
+    text-align: center;
+    color: aliceblue;
+    background: radial-gradient(circle,#687adf,#2f46c9); /* degradê no estilo radial*/
+}
+
+.image{
+    margin-top: 50px;
+    width: 100%;
+    height: 500px;
+    color: #2f46c9;
+    background-image: url(./3349370.jpg); /*selecionando imagem*/
+    background-repeat: no-repeat; /*anula a repetição da imagem no background caso ela seja menor q a área de preenchimento*/
+    background-size: 100%; /*preenche toda a área, sendo não aconselhado esse tipo de uso, pois correto é definir tamanhos corretos*/
+}
