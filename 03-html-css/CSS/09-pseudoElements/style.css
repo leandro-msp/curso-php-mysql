@@ -1,0 +1,79 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+
+html{font-family: Verdana, Geneva, Tahoma, sans-serif; background-color: rgb(228, 125, 117);}
+
+.container{ padding: 20px; width: 100%; margin: 0 auto;
+}
+
+.card{
+    width: 100%;
+    height: 500px;
+    background-color: rgb(255, 240, 240);
+}
+
+h2{
+    color:crimson;
+    font-size: 30px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 900;
+}
+/*Pseudo Element After e Before*/
+h2::after{ /* cria um elemento direto pelo css, não precisando digitar nada dentro do html | after siginifca "adicionar depois do elemento mencionado"(nesse caso h2)*/
+    content: "🖥️"; /*é obrigatório que haja um content, mesmo que vazio*/
+    width: 100%;
+    height: 30px;
+    display: block; /*serve para fazer um elemento ocupar toda a largura disponível na linha e forçar uma quebra de linha antes e depois dele*/
+    /**/
+}
+
+h2::before{ /*antes*/
+    content: "🖥️"; 
+    width: 100%;
+    height: 30px;
+    display: block;
+}
+
+p{
+    font-size: 16px;
+    margin-bottom: 20px;
+    text-align: center;
+    font-weight: 300;
+}
+/*Pseudo element first*/
+
+p::first-line{ /*vai aplicar a instrução somente na primeira linha do elemento*/
+    color: chocolate;
+}
+
+p::first-letter{ /*estiliza a primeira letra*/
+    font-style: italic;
+    font-weight: bold;
+    font-size: 20px;
+    color: blueviolet;
+}
+ul{
+    width: 100%;
+    list-style: none; /*REMOVE OS PONTOS DA LISTA*/
+    margin: 0 auto;
+    text-align: center;
+    background-color: bisque;
+    padding: 15px;
+    
+}
+
+/*PSEUDO ELEMENT nth-child*/
+ul li:nth-child(odd){ /*pegar os elementos por nºpar ou ímpar | odd = ímpar*/ 
+    background-color: cadetblue;
+}
+
+ul li:nth-child(even){ /* even = par*/ 
+    background-color: rgb(140, 241, 245);
+}
+
+/*PSEUDO ELEMENT hover*/
+li:hover{/*altera comportamento do elemnto ao passar mouse em cima do mesmo*/
+    height: 50px;
+    font-size: 20px;
+  
+}
