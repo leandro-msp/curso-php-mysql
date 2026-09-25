@@ -1,0 +1,31 @@
+*{margin: 0; padding: 0; box-sizing: border-box;}
+html{ font-family: Verdana, Geneva, Tahoma, sans-serif; background-color: honeydew;}
+.container{width: 100%; margin: 0 auto; padding: 20px;}
+
+h1{
+    color: rgb(18, 87, 99);
+    text-align: center;
+}
+.galeria .item img{ /*hierarquia quando deseja selecionar um elemento específico que estejam dentro de outras classes*/
+    display: block;
+    width: 100%;
+}
+
+.galeria{ /**/
+    margin-top: 20px;
+    display: flex; /*transforma um elemento em um contêiner flexível, permitindo organizar, alinhar e distribuir o espaço entre seus itens filhos de forma automática e responsiva*/
+    flex-wrap: wrap; /* alinha os elementos um abaixo do outro| wrap = joga o ultimo elemento pra baixo | wrap-reverse= o último elemento sempre vai para cima*/
+    justify-content: center; /*Alinha os itens na horizontal (início, fim, centro ou com espaço entre eles).*/
+    gap: 10px; /*adiciona espaço/margem entre os elementos*/
+}
+
+.item{
+    flex: 1 1 200px;
+    /*1ºparametro: conforme os itens forem posicionados na tela eles preencham o espaço, se aumentar a tela, o item pode aumentar para manter proporção
+    2ºparametro: conforme os itens forem posicionados na tela eles preencham o espaço, se diminuir a tela, o item diminui proporcinalmente
+    3º parametro: tamanho mínino para inicar o elemento( tamanho definido (width) no elemento Pai(galeria))
+    */
+    padding: 10px;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.2); /*sombra da borda*/
+    border-radius: 10px;
+}
